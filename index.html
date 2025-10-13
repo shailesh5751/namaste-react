@@ -8,18 +8,13 @@
 </head>
 <body>
     
+    
     <h1>Above the root</h1>
     <div id="root">
         Hello world from HTML
     </div>
     <h2>Below the root</h2>
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     
-    <script src="./App.js">
-    </script>
-
     <script>
         const heading=document.createElement('h1');
         heading.innerHTML="Hello World from JS";
@@ -28,5 +23,9 @@
         root.appendChild(heading);
     </script>
 
+    
+    
+    <script type="module" src="./App.js">
+    </script>
 </body>
 </html>
